@@ -1,3 +1,7 @@
+package LinkedList;
+
+import LinkedList.ReverseLinkedListDemo.ListNode;
+
 public class RemoveNthNodeFromEnd {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
