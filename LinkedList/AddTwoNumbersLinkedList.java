@@ -1,7 +1,7 @@
 package LinkedList;
 
 import LinkedList.ReverseLinkedListDemo.ListNode;
-
+import java.util.*;
 public class AddTwoNumbersLinkedList {
 
     public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
