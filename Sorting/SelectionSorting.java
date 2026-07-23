@@ -13,7 +13,7 @@ public class SelectionSorting {
                     min = nums[j];
                     ind =j ;
                 }
-                j+=1;
+                j++;
             }
             int temp = nums[ind];
             nums[ind]=nums[i];
