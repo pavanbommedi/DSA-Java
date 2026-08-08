@@ -21,3 +21,5 @@ public class TwoSum{
 
     }
 }
+
+//Two sum = complement pattern -> target - current = complement -> search hashmap -> found(return) ->not found(store in map)
