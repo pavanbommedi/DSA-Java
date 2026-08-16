@@ -1,14 +1,14 @@
 import java.util.*;
 public class ContainsDuplicate {
     public static boolean containsDuplicate(int[] nums) {
-        //O(n) space O(n) time
+        //O(n) space O(n) time 
         Set<Integer> set = new HashSet<>();
         for(int n : nums){
             if(!set.add(n)) return true;
         }
         return false;
 
-        //O(1) space and O(nlogn) time
+        //O(1) space and and O(nlogn) time
 //        Arrays.sort(nums);
 //        for(int i =0 ;i<nums.length-1;i++){
 //            if(nums[i]==nums[i+1]) return true;
