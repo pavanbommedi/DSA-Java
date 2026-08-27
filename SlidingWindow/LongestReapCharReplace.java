@@ -1,6 +1,6 @@
 import java.util.*;
 class LongestReapCharReplace {
-    //sliding window and freq Array
+    //sliding window and freq Arr
     public static int characterReplacement(String s, int k) {
         int left = 0;
         int[] freq = new int[26];
