@@ -1,2 +1,3 @@
-//code
-code
+public class PermutationsInString{
+
+}
