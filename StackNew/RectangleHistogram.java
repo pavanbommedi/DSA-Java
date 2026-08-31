@@ -1,4 +1,5 @@
-                                      import java.util.Stack;
+import java.util.Stack;
+//Monotonic stack
 
 public class RectangleHistogram{
     public static int largestRectangleArea(int[] heights) {
