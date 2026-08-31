@@ -1,5 +1,6 @@
 package DailyLeetCodeChallenge;
 //AUG 30 2026
+//Greedy
 class RemoveMinAndMax {
     public static int minimumDeletions(int[] nums) {
         int min_idx=-1;
