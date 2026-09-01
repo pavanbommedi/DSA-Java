@@ -1,5 +1,6 @@
 package SlidingWindow;
 import java.util.*;
+//Sliding window + Deque
 public class SlidingWindowMaximum {
     public static int[] maxSlidingWindow(int[] nums, int k) {
         // Handle empty or edge case conditions
