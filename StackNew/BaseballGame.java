@@ -1,5 +1,5 @@
 import java.util.Stack;
-
+//simple stack
 class BaseballGame {
     public static int calPoints(String[] operations) {
         Stack<Integer> stack = new Stack<>();
