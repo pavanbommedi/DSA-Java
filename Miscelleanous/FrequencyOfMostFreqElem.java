@@ -1,5 +1,5 @@
 import java.util.Arrays;
-//Bucksort
+//Bucksorting
 public class FrequencyOfMostFreqElem {
 
     public int freq1(int[] nums, int k){
