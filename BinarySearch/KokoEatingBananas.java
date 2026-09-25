@@ -1,20 +1,40 @@
-class Solution {
-    //BinarySearch
+class KokoEatingBananas {
+
     public int minEatingSpeed(int[] piles, int h) {
+
         int left = 1;
         int right = 0;
-        for(Integer n : piles) right=Math.max(right,n);
-        int min = right;
-        while(left<=right){
-            int k = (left+right)/2;
-            int sum = 0;
-            for(Integer n : piles) sum+=Math.ceil((double)n/k);
-            if(sum<=h){
-                min = Math.min(min,k);
-                right = k-1;
-            }
-            else left=k+1;
+
+        for (int pile : piles) {
+            right = Math.max(right, pile);
         }
-        return min;
+
+        while (left < right) {
+
+            int mid = left + (right - left) / 2;
+
+            if (canFinish(piles, h, mid)) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+
+    private boolean canFinish(int[] piles, int h, int speed) {
+
+        long hours = 0;
+
+        for (int pile : piles) {
+            hours += (pile + (long) speed - 1) / speed;
+
+            if (hours > h) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
